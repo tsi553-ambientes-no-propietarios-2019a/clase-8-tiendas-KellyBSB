@@ -63,7 +63,7 @@ function getotrastiendas($conn,$store) {
 	$sql = "SELECT *
 		FROM product 
 		join user on product.user = user.id
-		where user.id = '$store'
+		where user.store = '$store'
 		";
 
 		$res = $conn->query($sql);
